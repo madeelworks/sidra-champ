@@ -40,7 +40,7 @@ export default function Footer() {
               <ul className="text-gray-300 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://www.facebook.com/share/127X4X8Ys28/"
+                    href="/"
                     className="hover:text-blue-400 transition duration-300"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/its_adii_77/profilecard/?igsh=MWUxanozMW5uajZscw=="
+                    href="/"
                     className="hover:text-blue-400 transition duration-300"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -66,12 +66,12 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
               <ul className="text-gray-300 font-medium">
                 <li className="mb-4">
-                  <Link to="/Privacy" className="hover:text-blue-400 transition duration-300">
+                  <Link to="/" className="hover:text-blue-400 transition duration-300">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Terms" className="hover:text-blue-400 transition duration-300">
+                  <Link to="/" className="hover:text-blue-400 transition duration-300">
                     Terms &amp; Conditions
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ export default function Footer() {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a
-              href="https://www.facebook.com/share/127X4X8Ys28/"
+              href="/"
               className="text-gray-300 hover:text-blue-400 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default function Footer() {
               <span className="sr-only">Facebook</span>
             </a>
             <a
-              href="https://www.instagram.com/its_adii_77/profilecard/?igsh=MWUxanozMW5uajZscw=="
+              href="/"
               className="text-gray-300 hover:text-blue-400 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"

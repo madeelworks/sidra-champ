@@ -107,6 +107,13 @@ const Header = () => {
           >
             Contact
           </Link>
+          <Link
+  to="/Trainers"
+  className="block text-lg py-2 px-4 md:inline-block hover:text-blue-400 transition duration-300"
+>
+  Trainers
+</Link>
+
         </nav>
       </div>
     </header>

@@ -7,6 +7,7 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Journey from "./components/Journey";
 import Footer from "./components/Footer";
+import Trainers from "./components/Trainers";
 
 const Layout = () => (
   <div>
@@ -31,6 +32,8 @@ function App() {
         <Route path="achievements" element={<Achievements />} />
         <Route path="contact" element={<Contact />} />
         <Route path="journey" element={<Journey />} />
+        <Route path="trainers" element={<Trainers />} />
+
       </Route>
     </Routes>
   );
