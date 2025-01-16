@@ -42,9 +42,9 @@ const About = () => {
             Beyond her sports achievements, Syeda Sidra actively mentors aspiring athletes, instilling confidence and guiding them toward success.
           </p>
           <div className="mt-6">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
               Learn More
-            </button>
+            </button> */}
           </div>
         </motion.div>
         <motion.div
@@ -97,9 +97,9 @@ const About = () => {
             From her humble beginnings to becoming an Olympic Champion, Syeda Sidra’s journey reflects her unwavering commitment to excellence and serves as an inspiration to future generations.
           </p>
           <div className="mt-6">
-            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
+            {/* <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">
               Learn More
-            </button>
+            </button> */}
           </div>
         </motion.div>
       </div>
