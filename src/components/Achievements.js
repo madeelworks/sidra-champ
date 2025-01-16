@@ -67,10 +67,22 @@ const Achievements = () => {
                 <img
                   src={achievement.image}
                   alt={achievement.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-48 object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="p-6">
-                  <h2 className="text-lg font-bold text-blue-600 mb-2">{achievement.title}</h2>
+                  <h2 className="text-lg font-bold text-blue-600 mb-2">
+                    {achievement.title}
+                  </h2>
+                </div>
+                <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <img
+                    src={achievement.image}
+                    alt={achievement.title}
+                    className="w-auto max-h-[70%] object-contain mb-4"
+                  />
+                  <h2 className="text-2xl font-bold text-blue-600 mb-2">
+                    {achievement.title}
+                  </h2>
                 </div>
               </motion.div>
             ))}
@@ -95,10 +107,22 @@ const Achievements = () => {
                 <img
                   src={achievement.image}
                   alt={achievement.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-48 object-contain transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="p-6">
-                  <h2 className="text-lg font-bold text-blue-600 mb-2">{achievement.title}</h2>
+                  <h2 className="text-lg font-bold text-blue-600 mb-2">
+                    {achievement.title}
+                  </h2>
+                </div>
+                <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <img
+                    src={achievement.image}
+                    alt={achievement.title}
+                    className="w-auto max-h-[70%] object-contain mb-4"
+                  />
+                  <h2 className="text-2xl font-bold text-blue-600 mb-2">
+                    {achievement.title}
+                  </h2>
                 </div>
               </motion.div>
             ))}
