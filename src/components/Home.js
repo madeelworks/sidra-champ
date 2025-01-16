@@ -123,19 +123,19 @@ const Home = () => {
             <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-6 mt-10">
             Representing Pakistan in Global Competitions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 ">
             <b>France:</b> Participated in European training programs and international championships, demonstrating the skill and finesse of Pakistani athletes on one of the world's biggest sporting stages..            </p>
         
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mt-4">
             <b> Germany: </b>Competed in high-caliber events where she showcased her resilience and determination against some of the most skilled athletes in the world.            </p>
           
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mt-4">
             <b> Malaysia: </b>Represented Pakistan in the Asian Games, earning admiration for her dedication and outstanding performances in highly competitive arenas.           </p>
           
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mt-4">
             <b> Nepal:  </b>Took part in the 13th South Asian Games, where she stood out among athletes from neighboring countries, fostering regional goodwill through sportsmanship.           </p>
           
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mt-4">
             <b> South Korea:  </b>Engaged in the prestigious Korean Ambassador’s Cup Taekwondo Championship, where her exceptional technique and dedication won accolades.            </p>
           </div>
 
