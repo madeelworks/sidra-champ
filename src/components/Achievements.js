@@ -49,13 +49,11 @@ const internationalAchievements = [
 
 const Achievements = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-gray-100 to-gray-200">
-      <div className="container mx-auto px-6 space-y-12">
-        {/* National Achievements */}
-        <div>
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-10 text-center mt-10">
-            National Achievements
-          </h1>
+    <div>
+      {/* National Achievements Section */}
+      <section id="national" className="py-16 bg-gradient-to-r from-gray-100 to-gray-200">
+        <div className="container mx-auto px-6 space-y-12">
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-10 text-center mt-16">National Achievements</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {nationalAchievements.map((achievement, index) => (
               <motion.div
@@ -72,30 +70,18 @@ const Achievements = () => {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="p-6">
-                  <h2 className="text-lg font-bold text-blue-600 mb-2">
-                    {achievement.title}
-                  </h2>
-                </div>
-                <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <img
-                    src={achievement.image}
-                    alt={achievement.title}
-                    className="w-auto max-h-[70%] object-contain mb-4"
-                  />
-                  <h2 className="text-2xl font-bold text-blue-600 mb-2">
-                    {achievement.title}
-                  </h2>
+                  <h2 className="text-lg font-bold text-blue-600 mb-2">{achievement.title}</h2>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* International Achievements */}
-        <div>
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-10 text-center mt-20">
-            International Achievements
-          </h1>
+      {/* International Achievements Section */}
+      <section id="international" className="py-16 bg-gradient-to-r from-gray-200 to-gray-300">
+        <div className="container mx-auto px-6 space-y-12">
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-16 mt-14 text-center">International Achievements</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {internationalAchievements.map((achievement, index) => (
               <motion.div
@@ -112,26 +98,14 @@ const Achievements = () => {
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="p-6">
-                  <h2 className="text-lg font-bold text-blue-600 mb-2">
-                    {achievement.title}
-                  </h2>
-                </div>
-                <div className="absolute inset-0 bg-white bg-opacity-95 flex flex-col justify-center items-center text-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  <img
-                    src={achievement.image}
-                    alt={achievement.title}
-                    className="w-auto max-h-[70%] object-contain mb-4"
-                  />
-                  <h2 className="text-2xl font-bold text-blue-600 mb-2">
-                    {achievement.title}
-                  </h2>
+                  <h2 className="text-lg font-bold text-blue-600 mb-2">{achievement.title}</h2>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
