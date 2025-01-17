@@ -22,9 +22,7 @@ import picture77 from "./13-asian.jpg";
 import picture76 from "./world.jpg";
 
 const nationalAchievements = [
-  { title: "12th Korean Ambassador National Taekwondo Championship 2017", image: picture99 },
-  { title: "10th Korean Ambassador National Taekwondo Championship 2015", image: picture98 },
-  { title: "Korean Ambassador National Taekwondo Championship 2016", image: picture97 },
+
   { title: "9th National Women Karate Championship 2015", image: picture96 },
   { title: "Punjab Women Judo Championship 2015", image: picture95 },
   { title: "23rd March Pakistan Day Celebration 2018", image: picture94 },
@@ -40,6 +38,10 @@ const nationalAchievements = [
 ];
 
 const internationalAchievements = [
+  { title: "12th Korean Ambassador National Taekwondo Championship 2017", image: picture99 },
+  { title: "10th Korean Ambassador National Taekwondo Championship 2015", image: picture98 },
+  { title: "Korean Ambassador National Taekwondo Championship 2016", image: picture97 },
+
   { title: "Prestigious Title of Olympic Champion", image: picture80 },
   { title: "18th Asian Games Jakarta Palembang 2018 Malaysia", image: picture79 },
   { title: "Tsunami Kids Karate Championship - 13 December 2014", image: picture78 },
@@ -93,7 +95,7 @@ const Achievements = () => {
       {/* International Achievements Section */}
       <section id="international" className="py-16 bg-gradient-to-r from-gray-200 to-gray-300">
         <div className="container mx-auto px-6 space-y-12">
-          <h1 className="text-4xl font-extrabold text-gray-800 mb-16 mt-14 text-center">International Achievements</h1>
+          <h1 className="text-4xl font-extrabold text-gray-800 mb-16 mt-6 text-center">International Achievements</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {internationalAchievements.map((achievement, index) => (
               <motion.div
