@@ -1,78 +1,56 @@
-import React, { useState } from "react";
+import React from "react";
+import img111 from "./Trainer-1.jpeg";
+import img112 from "./Trainer-2.jpeg";
+import img113 from "./Trainer-3.jpeg";
+import img114 from "./Trainer-4.jpeg";
+import img115 from "./Trainer-5.jpeg";
+import img116 from "./Trainer-6.jpeg";
 
-const Trainers = () => {
-  const [trainers, setTrainers] = useState([]);
-  const [newTrainer, setNewTrainer] = useState("");
-  const [newExpertise, setNewExpertise] = useState("");
-
-  const handleAddTrainer = () => {
-    if (newTrainer.trim() && newExpertise.trim()) {
-      setTrainers([
-        ...trainers,
-        { name: newTrainer.trim(), expertise: newExpertise.trim() },
-      ]);
-      setNewTrainer("");
-      setNewExpertise("");
-    }
-  };
-
-  const handleRemoveTrainer = (index) => {
-    const updatedTrainers = [...trainers];
-    updatedTrainers.splice(index, 1);
-    setTrainers(updatedTrainers);
-  };
-
+const Trainer = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-blue-600 mb-4">Manage Trainers</h1>
-      <div className="w-1/2 bg-white shadow-lg rounded-lg p-6">
-        {/* Input for trainer name and expertise */}
-        <div className="mb-4">
-          <input
-            type="text"
-            value={newTrainer}
-            onChange={(e) => setNewTrainer(e.target.value)}
-            placeholder="Enter trainer's name"
-            className="w-full px-4 py-2 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* Left Text Content */}
+        <div className="flex flex-col mt-32">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-800 mb-6 mt-16">
+            SYED OQAIB HUSAIN SHAH (Karate Expert)
+          </h2>
+          <p className="text-lg text-gray-600 mb-4">
+          Syed Oqaib Husain Shah is an exceptional karate trainer who has made a significant impact in the martial arts community. With years of dedication and expertise, he has not only excelled as a trainer but also as a distinguished athlete.          </p>
+          <p className="text-lg text-gray-600">
+          Syed Oqaib has participated in various national-level tournaments, showcasing his extraordinary skills and discipline. His remarkable performances have earned him numerous medals, making him a celebrated figure in karate. Known for his passion and commitment, he continues to inspire aspiring martial artists through his coaching and achievements. His contributions to karate at the national level have elevated the sport's standard in Pakistan, earning him respect and admiration from peers and students alike.          </p>
+          
+        </div>
+
+        {/* Right Grid Images */}
+        <div className="grid grid-cols-3 gap-4 mt-40 mb-24">
+          <img
+            src={img111}
+            alt="Achievement 1"
+            className="col-span-2 row-span-2 w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
           />
-          <input
-            type="text"
-            value={newExpertise}
-            onChange={(e) => setNewExpertise(e.target.value)}
-            placeholder="Enter expertise"
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+          <img
+            src={img112}
+            alt="Achievement 2"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+          />
+          <img
+            src={img113}
+            alt="Achievement 3"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+          />
+          <img
+            src={img114}
+            alt="Achievement 4"
+            className="w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
+          />
+          <img
+            src={img115}
+            alt="Achievement 5"
+            className="col-span-2 w-full h-full object-cover rounded-lg shadow-md hover:scale-105 transition-transform"
           />
         </div>
-        <button
-          onClick={handleAddTrainer}
-          className="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition mb-4"
-        >
-          Add Trainer
-        </button>
-
-        {/* Display list of trainers */}
-        <ul className="list-disc pl-6">
-          {trainers.map((trainer, index) => (
-            <li
-              key={index}
-              className="flex justify-between items-center mb-2 bg-gray-100 px-4 py-2 rounded-lg shadow"
-            >
-              <div>
-                <p className="font-bold text-gray-800">{trainer.name}</p>
-                <p className="text-sm text-gray-600">Expertise: {trainer.expertise}</p>
-              </div>
-              <button
-                onClick={() => handleRemoveTrainer(index)}
-                className="text-red-500 hover:underline"
-              >
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
       </div>
-    </div>
   );
 };
 
-export default Trainers;
+export default Trainer;
